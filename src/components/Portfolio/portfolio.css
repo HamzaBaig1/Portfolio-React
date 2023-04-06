@@ -1,0 +1,107 @@
+#portfolio {
+    padding: 50px 80px;
+}
+
+#portfolio h1 {
+    font-size: 36px;
+}
+
+#portfolio .h-line {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: white;
+    border: 0 none;
+    color: white;
+    height: 1px;
+
+}
+
+#portfolio .portfolio-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+
+}
+
+#portfolio .portfolio-container .portfolio-item {
+    background-color: #3C3C3C;
+    border-radius: 34px;
+    margin: 1rem;
+    overflow: hidden;
+    padding-bottom: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+#portfolio .portfolio-container .portfolio-item:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+.portfolio-img img {
+    width: 100%;
+
+}
+
+#portfolio .portfolio-container .portfolio-item h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+#portfolio .portfolio-container .portfolio-item a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+
+
+
+}
+
+#portfolio .portfolio-container .portfolio-item {
+    text-align: center;
+}
+
+.portfolio-light h3
+{
+    color: white;
+}
+.portfolio-black
+{
+    color: black;
+}
+
+@media only screen and (max-width:1024px) {
+    #portfolio .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #portfolio {
+        padding: 80px 60px;
+    }
+
+    #portfolio .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+    }
+}
+
+@media only screen and (max-width:390px) {
+
+    #portfolio .portfolio-container .portfolio-item h3 {
+
+
+        font-size: 1.4rem;
+    }
+}

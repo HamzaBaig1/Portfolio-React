@@ -1,0 +1,227 @@
+.navbar {
+
+    padding: 10px 30px;
+    text-align: right;
+    margin-right: 13rem;
+    margin-top: 2rem;
+    transition: all 0.4s linear;
+    position: relative;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.55px;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+
+.navbar .img {
+    position: absolute;
+    width: 1.5rem;
+    /* right:0; */
+    margin-left: 10rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbar-light a {
+    color: black;
+    /* font-weight: 700; */
+
+}
+
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #CC9DFF;
+    transition: all 0.2s linear;
+}
+
+.navbar a:hover {
+    color: #CC9DFF;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+
+}
+
+
+@media only screen and (max-width:1140px) {
+    .navbar {
+        padding: 6px;
+        text-align: right;
+        margin-right: 7rem;
+        margin-top: 2rem;
+
+
+    }
+
+    .navbar .img {
+        position: absolute;
+        width: 1.5rem;
+        /* right:0; */
+        margin-left: 3rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .navbar {
+
+        margin-right: 3rem;
+
+
+
+    }
+
+    .navbar .img {
+
+
+        margin-left: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:936px) {
+    .navbar {
+        /* background-color: rgb(0, 0, 0 , 0.3); */
+        
+        padding: 15px 8px;
+        text-align: center;
+        margin-right: 0rem;
+        margin-top: 0rem;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+
+
+    }
+    .bg-change{
+        backdrop-filter: blur(15px);
+        background-color: rgb(60, 60, 60 , 0.3);
+    }
+    .navbar .img {
+
+
+        margin-left: 4rem;
+    }
+    .navbar-light a {
+        color: black;
+        /* font-weight: 700; */
+    
+    }
+
+}
+@media only screen and (max-width:800px) {
+    .navbar {
+        padding: 15px 8px;
+        text-align: center;
+        margin-right: 0rem;
+        
+
+
+    }
+    .navbar a {
+        /* background-color: red; */
+        font-size: 14px;
+
+
+    }
+    .navbar .img {
+
+
+        margin-left: 4rem;
+    }
+
+}
+@media only screen and (max-width:600px) {
+    .navbar {
+        /* background-color: red; */
+        padding: 8px 50px;
+        text-align: left;
+        margin-right: 0rem;
+
+
+    }
+    .navbar a {
+        padding: 0;
+        font-size: 16px;
+        margin-right: 2px
+    }
+    .navbar .img {
+
+        width: 1rem;
+        margin-left: 1rem;
+        top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:425px) {
+    .navbar {
+        /* background-color: red; */
+        padding: 15px 28px;
+        text-align: left;
+        margin-right: 0rem;
+
+
+    }
+
+    .navbar a {
+        padding: 0;
+        font-size: 13px;
+        margin-right: 2px
+    }
+    .navbar .img {
+
+        width: 1rem;
+        margin-left: 1rem;
+        top: 19px;
+    }
+
+}
+
+
+@media only screen and (max-width:375px) {
+    .navbar {
+        /* background-color: red; */
+        padding: 15px 28px;
+        text-align: left;
+        margin-right: 0rem;
+
+
+    }
+
+    .navbar a {
+        padding: 0;
+        font-size: 12px;
+
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+
+    .navbar a {
+        font-size: 8px;
+
+
+    }
+
+}

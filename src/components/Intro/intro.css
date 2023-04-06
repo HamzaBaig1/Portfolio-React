@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+#intro {
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+    padding: 10px 0;
+}
+
+.left {
+    width: 40%;
+}
+
+.rectangle {
+
+    width: 347px;
+    height: 630px;
+    background: linear-gradient(161.61deg, #EFE6FF 0%, #B469FF 100%);
+    border-radius: 0px 0px 200px 200px;
+    margin-top: -6rem;
+    margin-left: 5rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+.left .rectangle span {
+    font-size: 4rem;
+    color: black;
+    margin: 0 auto;
+    display: table;
+    font-weight: bold;
+}
+
+.left .rectangle img {
+    width: 100%;
+    position: relative;
+    bottom: -3rem;
+
+}
+
+.right {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.right h1 {
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54.9787px;
+    line-height: 131px;
+    margin-left: 5rem;
+    color: #1C1B1F;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #CC9DFF;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    /* background-color: white; */
+
+
+}
+
+
+.right h1::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    background-image: url(Vector\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.6s;
+}
+
+.right h1:hover::after {
+    width: 75%;
+    height: 30%;
+}
+
+.right h1:hover {
+    color: #CC9DFF;
+
+
+
+}
+
+.right h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    margin-left: 5rem;
+
+}
+
+.right p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: 5rem;
+
+}
+
+.intro-light h1 {
+    color: #ccc;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.intro-light h3 {
+    color: black;
+}
+.intro-light p {
+    color: black;
+}
+
+
+
+
+
+.btn {
+    background:
+        linear-gradient(#1C1B1F, #1C1B1F) padding-box,
+        linear-gradient(60deg, #EFE5FF, #B469FF) border-box;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    display: inline-block;
+    width: 180px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(#EFE5FF, #B469FF);
+    opacity: 0;
+    border-radius: 12px;
+    transition: all 0.4s linear;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.btn:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+@media only screen and (max-width:1140px) {
+
+    .right h1 {
+        font-size: 40px;
+    }
+
+    .right h3 {
+        font-size: 28px;
+    }
+
+    .right p {
+
+        font-size: 16px;
+
+    }
+
+    .btn {
+        padding: 8px 28px;
+        width: 160px;
+        font-size: 24px;
+    }
+
+    .rectangle {
+
+        width: 300px;
+        height: 550px;
+
+    }
+
+    .left .rectangle img {
+        width: 100%;
+        bottom: -3rem;
+
+    }
+}
+
+@media only screen and (max-width:936px) {
+
+    #intro {
+        height: auto;
+        padding: 40px 50px;
+    }
+
+    .left {
+        width: 0;
+    }
+
+    .rectangle {
+
+        display: none;
+
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right h1 {
+        font-size: 30px;
+        margin-left: 3rem;
+
+    }
+
+    .right h3 {
+        font-size: 24px;
+        margin-left: 3rem;
+    }
+
+    .right p {
+
+        font-size: 14px;
+        margin-left: 3rem;
+
+    }
+
+    .btn {
+        padding: 7px 22px;
+        margin-left: 3rem;
+        width: 140px;
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (max-width:425px) {
+    #intro {
+        padding: 30px 20px;
+    }
+
+    .right h1 {
+        font-size: 30px;
+        margin-left: 3rem;
+
+    }
+
+    .right h3 {
+        font-size: 24px;
+        margin-left: 3rem;
+    }
+
+    .right p {
+
+        font-size: 14px;
+        margin-left: 3rem;
+
+    }
+
+    .btn {
+        padding: 7px 22px;
+        margin-left: 3rem;
+        width: 140px;
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:390px) {
+    .right h1 {
+        font-size: 25px;
+    }
+
+    .right {
+
+        padding: 2px 0;
+        display: flex;
+
+
+
+    }
+
+    .right h1 {
+        font-size: 25px;
+    }
+
+    .right h3 {
+        font-size: 20px;
+    }
+
+    .right p {
+
+        font-size: 12px;
+
+    }
+
+    .btn {
+        padding: 7px 22px;
+        width: 140px;
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:320px) {
+
+    .right h1 {
+        font-size: 22px;
+        margin-left: 2rem;
+    }
+
+    .right h3 {
+        font-size: 18px;
+        margin-left: 2rem;
+    }
+
+
+    .right p {
+
+        margin-left: 1rem;
+        margin-left: 2rem;
+
+    }
+
+
+
+    .btn {
+        padding: 5px 20px;
+        width: 138px;
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+
+
+
+}

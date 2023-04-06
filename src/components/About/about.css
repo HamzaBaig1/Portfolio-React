@@ -1,0 +1,61 @@
+#about {
+    padding: 20px 80px;
+}
+
+#about h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+
+}
+
+#about p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 2rem;
+}
+.about-light 
+{
+    color: black;
+}
+@media only screen and (max-width:425px)
+{
+    #about {
+        padding: 80px 60px;
+    
+    }
+    
+    #about h1 {
+        
+        font-size: 30px;
+        
+    
+    }
+    
+    #about p {
+        
+        font-size: 14px;
+        
+    }
+}
+@media only screen and (max-width:320px)
+{
+    #about {
+        padding: 20px 30px;
+    
+    }
+    
+    #about h1 {
+        
+        font-size: 25px;
+        
+    
+    }
+    
+    #about p {
+        
+        font-size: 12px;
+        
+    }
+}

@@ -1,0 +1,75 @@
+.skill-b {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 2s ease;
+    position: relative;
+    z-index: 1;
+    
+
+}
+.skill-b::before
+{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(#EFE5FF,#B469FF);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    border-radius: 32px;
+    z-index: -1;
+}
+.skill-b:hover::before {
+    opacity: 1;
+
+}
+
+.skill-b:hover img {
+    transition: all 0.4s linear;
+    transform: scale(1.2);
+}
+.skill-b:not(:hover) img {
+    transition: all 0.4s linear;
+    transform: scale(1.0);
+}
+
+.skill-b:hover h2 {
+    transition: all 0.4s linear ;
+    transform: translateY(10px);
+}
+.skill-b:not(:hover) h2 {
+    transition: all 0.4s linear ;
+    transform: translateY(0px);
+}
+
+@media only screen and (max-width:1024px) {
+    .skill-b {
+        width: 200px;
+        height: 200px;
+
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .skill-b {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .skill-b {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+
+
+    }
+}
